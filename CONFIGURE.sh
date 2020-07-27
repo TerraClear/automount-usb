@@ -5,6 +5,9 @@
 PATH="$PATH:/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin:/bin:/sbin"
 chmod 755 ./*.sh
 
+mkdir /media
+chmod 0777 /media
+
 cp ./usb-mount.sh /usr/local/bin/
 
 # Systemd unit file for USB automount/unmount 
