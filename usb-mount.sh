@@ -59,7 +59,7 @@ do_mount()
     ${log} "Mount point: ${MOUNT_POINT}"
 
     mkdir -p ${MOUNT_POINT}
-
+    chmod 0777 ${MOUNT_POINT}
     # Global mount options
     OPTS="rw,relatime"
 
